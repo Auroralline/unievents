@@ -1,0 +1,79 @@
+spring:
+  cloud:
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: ${prefix.distinction.name:unievents}-base-data-service
+          uri: lb://${prefix.distinction.name:unievents}-base-data-service
+          predicates:
+            - Path=/unievents/basedata/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 基础数据服务
+
+        - id: ${prefix.distinction.name:unievents}-customize-service
+          uri: lb://${prefix.distinction.name:unievents}-customize-service
+          predicates:
+            - Path=/unievents/customize/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 定制化服务
+
+        - id: ${prefix.distinction.name:unievents}-job-service
+          uri: lb://${prefix.distinction.name:unievents}-job-service
+          predicates:
+            - Path=/unievents/job/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 任务执行服务
+
+        - id: ${prefix.distinction.name:unievents}-order-service
+          uri: lb://${prefix.distinction.name:unievents}-order-service
+          predicates:
+            - Path=/unievents/order/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 订单服务
+
+        - id: ${prefix.distinction.name:unievents}-pay-service
+          uri: lb://${prefix.distinction.name:unievents}-pay-service
+          predicates:
+            - Path=/unievents/pay/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 支付服务
+
+        - id: ${prefix.distinction.name:unievents}-program-service
+          uri: lb://${prefix.distinction.name:unievents}-program-service
+          predicates:
+            - Path=/unievents/program/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 节目服务
+
+        - id: ${prefix.distinction.name:unievents}-user-service
+          uri: lb://${prefix.distinction.name:unievents}-user-service
+          predicates:
+            - Path=/unievents/user/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 用户服务
+            
+        - id: ${prefix.distinction.name:unievents}-admin-service
+          uri: lb://${prefix.distinction.name:unievents}-admin-service
+          predicates:
+            - Path=/unievents/admin/**
+          filters:
+            - StripPrefix=2
+          metadata:
+            title: 监听服务    

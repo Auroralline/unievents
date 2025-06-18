@@ -1,0 +1,4 @@
+# 支付宝回调地址
+orderPayNotifyUrl: http://unievents-javaup.chat:6085/unievents/order/order/alipay/notify
+# 支付成功页面
+orderPayReturnUrl: http://unievents-javaup.chat/order/paySuccess

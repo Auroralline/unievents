@@ -1,0 +1,2 @@
+com.unievents.swagger.SwaggerConfiguration
+com.unievents.mybatisplus.MybatisPlusAutoConfiguration

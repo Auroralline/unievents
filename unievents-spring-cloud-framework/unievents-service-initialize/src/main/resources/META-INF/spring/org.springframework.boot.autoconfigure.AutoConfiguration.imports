@@ -1,0 +1,2 @@
+com.unievents.initialize.config.InitializeAutoConfig
+com.unievents.initialize.impl.composite.CompositeAutoConfiguration

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>unievents</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+
+    <artifactId>unievents-server</artifactId>
+    <packaging>pom</packaging>
+
+    <name>server</name>
+    <description>服务模块</description>
+
+    <modules>
+        <module>unievents-order-service</module>
+        <module>unievents-gateway-service</module>
+        <module>unievents-base-data-service</module>
+        <module>unievents-user-service</module>
+        <module>unievents-admin-service</module>
+        <module>unievents-customize-service</module>
+        <module>unievents-program-service</module>
+        <module>unievents-pay-service</module>
+        <module>unievents-mybatis-plus-service</module>
+    </modules>
+</project>

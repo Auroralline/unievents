@@ -1,0 +1,3 @@
+com.unievents.captcha.service.impl.BlockPuzzleCaptchaServiceImpl
+com.unievents.captcha.service.impl.ClickWordCaptchaServiceImpl
+com.unievents.captcha.service.impl.DefaultCaptchaServiceImpl

@@ -1,0 +1,4 @@
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  com.unievents.environment.SpringEnvironment
+org.springframework.context.ApplicationContextInitializer=\
+  com.unievents.core.SpringUtil

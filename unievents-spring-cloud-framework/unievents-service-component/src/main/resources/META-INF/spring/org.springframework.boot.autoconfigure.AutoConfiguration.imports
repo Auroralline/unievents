@@ -1,0 +1,2 @@
+com.unievents.feign.ExtraFeignAutoConfiguration
+com.unievents.filter.FilterAutoConfiguration
